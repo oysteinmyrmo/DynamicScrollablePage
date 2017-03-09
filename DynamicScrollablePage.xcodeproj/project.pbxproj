@@ -13,6 +13,10 @@
 		DF006D511E7080AD00D5EAC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF006D4F1E7080AD00D5EAC9 /* Main.storyboard */; };
 		DF006D531E7080AD00D5EAC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF006D521E7080AD00D5EAC9 /* Assets.xcassets */; };
 		DF006D561E7080AD00D5EAC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF006D541E7080AD00D5EAC9 /* LaunchScreen.storyboard */; };
+		DF006D601E70C00E00D5EAC9 /* DynamicEmbeddedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF006D5F1E70C00E00D5EAC9 /* DynamicEmbeddedView.xib */; };
+		DF006D621E70C01D00D5EAC9 /* DynamicEmbeddedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF006D611E70C01D00D5EAC9 /* DynamicEmbeddedViewController.swift */; };
+		DFD118631E70CBE1003111FE /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD118621E70CBE1003111FE /* TableViewCell.xib */; };
+		DFD118651E70CCE1003111FE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD118641E70CCE1003111FE /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DF006D521E7080AD00D5EAC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF006D551E7080AD00D5EAC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF006D571E7080AD00D5EAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF006D5F1E70C00E00D5EAC9 /* DynamicEmbeddedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicEmbeddedView.xib; sourceTree = "<group>"; };
+		DF006D611E70C01D00D5EAC9 /* DynamicEmbeddedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicEmbeddedViewController.swift; sourceTree = "<group>"; };
+		DFD118621E70CBE1003111FE /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		DFD118641E70CCE1003111FE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				DF006D521E7080AD00D5EAC9 /* Assets.xcassets */,
 				DF006D541E7080AD00D5EAC9 /* LaunchScreen.storyboard */,
 				DF006D571E7080AD00D5EAC9 /* Info.plist */,
+				DF006D5F1E70C00E00D5EAC9 /* DynamicEmbeddedView.xib */,
+				DF006D611E70C01D00D5EAC9 /* DynamicEmbeddedViewController.swift */,
+				DFD118621E70CBE1003111FE /* TableViewCell.xib */,
+				DFD118641E70CCE1003111FE /* TableViewCell.swift */,
 			);
 			path = DynamicScrollablePage;
 			sourceTree = "<group>";
@@ -126,6 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF006D601E70C00E00D5EAC9 /* DynamicEmbeddedView.xib in Resources */,
+				DFD118631E70CBE1003111FE /* TableViewCell.xib in Resources */,
 				DF006D561E7080AD00D5EAC9 /* LaunchScreen.storyboard in Resources */,
 				DF006D531E7080AD00D5EAC9 /* Assets.xcassets in Resources */,
 				DF006D511E7080AD00D5EAC9 /* Main.storyboard in Resources */,
@@ -139,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD118651E70CCE1003111FE /* TableViewCell.swift in Sources */,
 				DF006D4E1E7080AD00D5EAC9 /* SecondViewController.swift in Sources */,
 				DF006D4A1E7080AD00D5EAC9 /* AppDelegate.swift in Sources */,
+				DF006D621E70C01D00D5EAC9 /* DynamicEmbeddedViewController.swift in Sources */,
 				DF006D4C1E7080AD00D5EAC9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +319,7 @@
 				DF006D5C1E7080AD00D5EAC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
