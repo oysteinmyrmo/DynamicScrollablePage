@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicEmbeddedViewController" customModule="DynamicScrollablePage" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="vsZ-jC-5m4" id="CPI-LO-50P"/>
+                <outlet property="tableViewHeight" destination="eEE-Id-3pB" id="nio-Q2-KOr"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1ZA-EX-0OH"/>
             </connections>
         </placeholder>
@@ -27,16 +28,19 @@
                         <constraint firstAttribute="height" constant="150" id="xOC-lN-hqp"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="128" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vsZ-jC-5m4" userLabel="TableView">
-                    <rect key="frame" x="0.0" y="150" width="375" height="128"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vsZ-jC-5m4" userLabel="TableView">
+                    <rect key="frame" x="0.0" y="150" width="375" height="150"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="eEE-Id-3pB"/>
+                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="6rg-jg-OpE"/>
                         <outlet property="delegate" destination="-1" id="vvU-ma-2zH"/>
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZP5-Hu-qxg" userLabel="PurpleView">
-                    <rect key="frame" x="0.0" y="278" width="375" height="150"/>
+                    <rect key="frame" x="0.0" y="300" width="375" height="150"/>
                     <color key="backgroundColor" red="0.95782703250000001" green="0.1871560766" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="pBl-ns-xrP"/>

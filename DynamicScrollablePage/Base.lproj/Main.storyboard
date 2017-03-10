@@ -53,8 +53,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <containerView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-gi-UPp" userLabel="ContainerView">
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-gi-UPp" userLabel="ContainerView">
                                                 <rect key="frame" x="0.0" y="992" width="375" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="dFK-Hr-aPD"/>
+                                                </constraints>
                                                 <connections>
                                                     <segue destination="bbQ-4z-xEP" kind="embed" identifier="ContainerViewSegue" id="GwV-tU-p42"/>
                                                 </connections>
@@ -111,6 +114,10 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="containerView" destination="A9H-gi-UPp" id="cra-NN-KZ8"/>
+                        <outlet property="containerViewHeightConstraint" destination="dFK-Hr-aPD" id="BrV-HD-ndr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
